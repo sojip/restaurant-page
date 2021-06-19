@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Lato&family=Oswald&display=swap');
+
 :root {
     --mainColor : rgb(243, 179, 5);
     --descriptionColor: rgba(73, 37, 20, 0.9);
@@ -7,7 +9,9 @@
     --contentHeight : 60vh;
 }
 
-body {
+
+
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -15,7 +19,7 @@ body {
 }
 
 #content {
-    height: 100vh;
+    height: 100%;
     position: relative;
     background: url(./img/3.svg);
     background-position: center center;
@@ -41,6 +45,10 @@ nav {
     color: var(--titleColor);
 }
 
+nav h1, nav ul li {
+    font-family: 'Caveat', cursive;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -56,7 +64,12 @@ nav ul li:nth-child(2) {
 
 }
 
+.description {
+    line-height: 1.2;
+}
+
 .description, .contact {
+    box-sizing: border-box;
     width: 300px;
     height: 450px;
     position: absolute;
@@ -64,11 +77,12 @@ nav ul li:nth-child(2) {
     margin-top: -225px;
     left : 50%;
     margin-left: -150px;
-    padding: 10px;
+    padding: 25px;
     border-radius: 10px;
     color: var(--textColor);
     background-color: var(--descriptionColor);
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    font-family: 'Oswald', sans-serif;
 }
 
 .description p {
@@ -106,6 +120,7 @@ nav ul li:nth-child(2) {
     color: var(--textColor);
     box-shadow: 0 8px 6px -6px black;
     line-height: 1.1;
+    font-family: 'Lato', sans-serif;
 }
 
 .card p {

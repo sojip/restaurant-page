@@ -9,7 +9,7 @@ function loadNav() {
     //create navbar
     let nav = document.createElement('nav');
     let title = document.createElement('h1');
-    title.textContent = "My Restaurant";
+    title.textContent = "The Restaurant";
     nav.appendChild(title);
     let ul = document.createElement('ul');
     let navMenu = ['Home', 'Menu', 'Contact'];
@@ -33,7 +33,7 @@ function loadDescription() {
     img_.src = MyImage_;
     div.appendChild(img_);
     let p = document.createElement('p');
-    p.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus, nibh convallis rhoncus consequat, massa nunc blandit ipsum, in ultrices enim nibh id nibh. Ut iaculis libero efficitur risus congue suscipit. Integer ullamcorper dignissim nisl id porta. Proin sit amet feugiat justo. Suspendisse eu ligula eros."
+    p.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus, nibh convallis rhoncus consequat, massa nunc blandit ipsum, in ultrices enim nibh id."
     div.appendChild(p);
     const img = new Image();
     img.src = myImage;
