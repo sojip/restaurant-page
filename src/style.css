@@ -6,10 +6,7 @@
     --darkBrown : rgba(73, 37, 20);
     --textColor: #E0D2D4;
     --titleColor: #0E0808;
-    --contentHeight : 60vh;
 }
-
-
 
 html, body {
     margin: 0;

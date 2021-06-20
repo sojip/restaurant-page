@@ -1,5 +1,5 @@
-import myImage from "./img/4.png";
-import MyImage_ from "./img/5.png";
+import descriptionIcon from "./img/4.png";
+import descriptionIcon_ from "./img/5.png";
 
 function loadNav() {
     let content = document.querySelector('#content');
@@ -30,13 +30,13 @@ function loadDescription() {
     let div = document.createElement('div');
     div.classList.add('description', 'visible');
     const img_ = new Image();
-    img_.src = MyImage_;
+    img_.src = descriptionIcon_;
     div.appendChild(img_);
     let p = document.createElement('p');
     p.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus, nibh convallis rhoncus consequat, massa nunc blandit ipsum, in ultrices enim nibh id."
     div.appendChild(p);
     const img = new Image();
-    img.src = myImage;
+    img.src = descriptionIcon;
     div.appendChild(img);
     let visible = document.querySelector('.visible');
     if (visible) content.removeChild(visible);
